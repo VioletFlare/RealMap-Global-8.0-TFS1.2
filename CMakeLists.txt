@@ -45,7 +45,7 @@ endif()
 
 find_package(Boost 1.53.0 COMPONENTS system filesystem iostreams REQUIRED)
 
-add_subdirectory(src)
+include(src/CMakeLists.txt)
 add_executable(tfs ${tfs_SRC})
 
 include_directories(${MYSQL_INCLUDE_DIR} ${LUA_INCLUDE_DIR} ${Boost_INCLUDE_DIRS} ${PUGIXML_INCLUDE_DIR} ${Crypto++_INCLUDE_DIR})
