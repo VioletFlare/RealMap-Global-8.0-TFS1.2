@@ -9,7 +9,7 @@ list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake")
 
 include(cotire)
 
-add_compile_options(-Wall -Werror -pipe -fvisibility=hidden -lgmp)
+add_compile_options(-Wall -Werror -pipe -fvisibility=hidden -lgmp -lgmpxx)
 
 set(CMAKE_CXX_FLAGS_PERFORMANCE "${CMAKE_CXX_FLAGS_RELEASE} -march=native")
 
