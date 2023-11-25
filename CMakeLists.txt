@@ -19,6 +19,7 @@ endif()
 
 include(FindCXX11)
 include(FindLTO)
+include(FindGMP)
 
 # Find packages.
 find_package(Crypto++ REQUIRED)
