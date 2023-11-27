@@ -4488,3 +4488,19 @@ ALTER TABLE `znote_guild_wars`
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+
+CREATE TABLE IF NOT EXISTS `z_ots_comunication` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) NOT NULL,
+  `type` varchar(255) NOT NULL,
+  `action` varchar(255) NOT NULL,
+  `param1` varchar(255) NOT NULL,
+  `param2` varchar(255) NOT NULL,
+  `param3` varchar(255) NOT NULL,
+  `param4` varchar(255) NOT NULL,
+  `param5` varchar(255) NOT NULL,
+  `param6` varchar(255) NOT NULL,
+  `param7` varchar(255) NOT NULL,
+  `delete_it` int(2) NOT NULL DEFAULT '1',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=230 ;
